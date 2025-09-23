@@ -19,21 +19,21 @@ http://localhost:3000
 
 ## Rotas CRUD
 
-- **POST** `/usuarios` → cria usuário.  
-- **GET** `/usuarios` → lista todos.  
-- **GET** `/usuarios/:id` → busca por ID.  
-- **PUT** `/usuarios/:id` → atualiza por ID.  
-- **DELETE** `/usuarios/:id` → deleta por ID.  
+- **POST** `/maquina` → cria usuário.  
+- **GET** `/maquina` → lista todos.  
+- **GET** `/maquina/:id` → busca por ID.  
+- **PUT** `/maquina/:id` → atualiza por ID.  
+- **DELETE** `/maquina/:id` → deleta por ID.  
 
 Criar usuário (POST)
 Clique em New Request.
 Escolha o método POST.
-Digite a URL: http://localhost:3000/usuarios
+Digite a URL: http://localhost:3000/maquina
 Vá na aba Body → JSON e insira:
 
 {
   "nome": "Tatiana",
-  "email": "tatiana@email.com"
+  "tipo": "tatiana@tipo.com"
 }
 
 
@@ -47,7 +47,7 @@ Método GET.
 
 URL:
 
-http://localhost:3000/usuarios
+http://localhost:3000/maquina
 
 
 Clique em Send → você verá a lista de usuários cadastrados.
@@ -58,7 +58,7 @@ Copie o _id de algum usuário retornado na listagem.
 
 Crie uma requisição GET com a URL:
 
-http://localhost:3000/usuarios/COLOQUE_O_ID_AQUI
+http://localhost:3000/maquina/COLOQUE_O_ID_AQUI
 
 ✏️ Atualizar usuário (PUT)
 
@@ -66,14 +66,14 @@ Crie uma requisição PUT.
 
 URL:
 
-http://localhost:3000/usuarios/COLOQUE_O_ID_AQUI
+http://localhost:3000/maquina/COLOQUE_O_ID_AQUI
 
 
 Body (JSON):
 
 {
   "nome": "Novo Nome",
-  "email": "novo@email.com"
+  "tipo": "novo@tipo.com"
 }
 
 
@@ -83,7 +83,7 @@ Clique em Send → o usuário será atualizado.
 
 Crie uma requisição DELETE.
 
-URL: http://localhost:3000/usuarios/COLOQUE_O_ID_AQUI
+URL: http://localhost:3000/maquina/COLOQUE_O_ID_AQUI
 
 
 Clique em Send → o usuário será removido.
